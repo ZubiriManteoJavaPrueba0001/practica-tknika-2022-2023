@@ -48,7 +48,7 @@ public class HibernatePersonaDB implements IPersonaGBD{
         
         Persona per = (Persona) session.get(Persona.class, persona.getId());
 
-        if(per==null)
+        if(per!=null)
         {
             session.beginTransaction();
             session.update(persona);

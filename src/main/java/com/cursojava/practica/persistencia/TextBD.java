@@ -155,7 +155,7 @@ public class TextBD implements IPersonaGBD{
         
         String id = persona.getId();
 
-        if(!datos.containsKey(id))
+        if(datos.containsKey(id))
         {
             datos.put(id, persona);
 
